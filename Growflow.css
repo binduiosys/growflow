@@ -1,0 +1,240 @@
+
+
+
+.hero-section{
+background-color: #F7F8FC;
+padding: 65px 0px 122px;
+}
+.hero-section .hero-section-content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.hero-section .contents-box{
+margin-right: 10%;
+}
+.hero-section .video-popup .popup img{
+width: 100%;
+display: block;
+}
+.hero-section .contents-box{
+flex-basis: 53%;
+}
+.hero-section .video-popup{
+flex-basis: 37%;
+}
+.hero-section .bg-section{
+min-height: 233px;
+width: 100%;
+}
+.hero-section .describe{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.hero-section .popup a{
+position: relative;
+z-index: 1;
+}
+.hero-section .icon{
+position: absolute;
+transform: translate(-50%,-50%);
+z-index: 2;
+top: 50%;
+left: 50%;
+width: 100%;
+max-width: 60px;
+min-height: 40px;
+background-color:  #030047;
+color: #fff;
+}
+.hero-section .icon i{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.main-button a.btn {
+text-decoration: none;
+font-size: 13px;
+letter-spacing: 1.17px;
+line-height: 17px;
+padding: 16px 32px;
+text-align: center;
+display: inline-block;
+position: relative;
+z-index: 1;
+text-transform: uppercase;
+box-shadow: none;
+color: #030047;
+background: transparent;
+border: 2px solid #030047;
+font-weight: 700;
+transition: .3s all ease-in-out;
+outline: 0;
+
+}
+span.button-text {
+display: block;
+position: relative;
+border-radius: 0.8px;
+transform: translate(10px,-10px); 
+transition: transform 150ms ease-out;
+}
+span.button-hover {
+display: block;
+position: absolute;
+left: 0;
+top: 0;
+right: 0;
+bottom: 0;
+border-radius: 0.05rem;
+background-color: #ffcc3e;
+box-shadow: 0 0 0 1px #ffcc3e;
+transform: translate(5px,-10px);
+transition: transform 150ms ease-out;
+z-index: -1;
+border: 2px solid #030047;
+margin-left: 4px;
+}
+.main-button a.btn:hover {
+    background-color: #ffcc3e;
+    transition: .3s all ease-in-out;
+}
+
+.main-button a.btn:hover span.button-text {
+    transform: translate(0px,-4px);
+}
+
+.main-button a.btn:hover span.button-hover {
+    transform: translate(-2px,-4px);
+    transition: transform 150ms ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----MEDIA QUERY STARTS---- */
+@media (min-width:767px) and (max-width:1024px)
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media (max-width:767px){   
+    
+    .hero-section .hero-section-content{
+        display: block;
+        /* text-align: center; */
+        /* justify-content: center;
+        align-items: center; */
+        flex-wrap: wrap;
+        }
+        .hero-section .contents-box{
+        margin-right: 0%;
+        }
+        .hero-section .video-popup .popup img{
+        width: 100%;
+        display: block;
+        
+        }
+        .hero-section .contents-box{
+        flex-basis: 100%;
+        }
+        .hero-section .video-popup{
+        flex-basis: 100%;
+        }
+         h1{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 44px;
+            color: #030047;
+            font-size: 45px;
+        }
+        .hero-section .contents-box{
+            padding-bottom: 40px;
+        }
+        .hero-section .pop-img{
+            max-width: 351px;
+            margin: 0 auto;
+        }
+        .hero-section .describe{
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .main-button a.btn{
+            padding:16px 50px 16px 50px ;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px){
+    .hero-section .hero-section-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .hero-section .contents-box{
+        margin-right: 0%;
+        }
+        .hero-section .video-popup .popup img{
+        width: 100%;
+        display: block;
+        }
+        .hero-section .contents-box{
+        flex-basis: 100%;
+        }
+        .hero-section .video-popup{
+        flex-basis: 100%;
+        }
+         h1{
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            line-height: 44px;
+            color: #030047;
+            font-size: 38px;
+        
+        }
+        .hero-section .contents-box{
+            padding-bottom: 40px;
+        }
+        .main-button a.btn{
+            padding:16px 50px 16px 50px ;
+        }
+        
+
+}
