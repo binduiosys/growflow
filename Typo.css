@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
-*{    
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    }
-.content-wrapper{
+}
+
+.content-wrapper {
     max-width: 1114px;
     padding: 0 20px;
     margin: 0 auto;
 }
-body{
+
+body {
     font-family: 'Inter', sans-serif;
 }
-h1{
+
+h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 68px;
@@ -21,20 +25,23 @@ h1{
     font-size: 45px;
 
 }
-h2{
+
+h2 {
     font-size: 55px;
     color: #695ff7;
     line-height: 54px;
     text-align: center;
 }
-h3{
+
+h3 {
     color: #000000;
     font-size: 45px;
     line-height: 54px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-h4{
+
+h4 {
     color: #000;
     font-size: 28px;
     line-height: 34px;
@@ -42,36 +49,41 @@ h4{
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-h5{
+
+h5 {
     color: #000;
     font-size: 28px;
     line-height: 38px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-h6{
+
+h6 {
     border-bottom: 2px solid #ffcc3e;
     line-height: 17px;
     display: inline-block;
     font-size: 16px;
     margin-bottom: 30px;
 }
-p{
+
+p {
     line-height: 30px;
     font-size: 17px;
     color: #030047;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
-.bg-section{
+
+.bg-section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
-.primary-button a{
+
+.primary-button a {
     text-decoration: none;
     background-color: transparent;
-    border: 2px solid  #ffcc3e ;
+    border: 2px solid #ffcc3e;
     color: #030047;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
@@ -83,10 +95,16 @@ p{
     transition: .3s all ease-in-out;
     cursor: pointer;
 }
-.secondary-button a{
+.primary-button a:hover {
+    background-color: #ffcc3e;
+    transition: .3s all ease-in-out;
+}
+
+
+.secondary-button a {
     text-decoration: none;
     background-color: transparent;
-    border: 2px solid  #ffcc3e ;
+    border: 2px solid #ffcc3e;
     color: #030047;
     font-size: 13px;
     font-family: 'Inter', sans-serif;
