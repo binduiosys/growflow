@@ -10,10 +10,13 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/jqueryfancybox@3.5.6/dist/.fancybox.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.0/css/font-awesome-ie7.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+<script src="./index.js"></script>
 
 </head>
 <body>
@@ -63,24 +66,24 @@
     <div class="content-wrapper">
         <div class="container">
             <div class="counter-heading">
-                <h5>Trusted by over 1,498 cannabis cultivators, processors, distributors, and retailers</h5>
+                <h4>Trusted by over 1,498 cannabis cultivators, processors, distributors, and retailers</h4>
             </div>
                 <div class="counters">
                     <div class="counter-number">
-                        <h2  class="counter" data-number="43"></h2>
+                        <h2  class="counter" data-number="43">0</h2>
                         <div class="counter-content">
                             <p>Average hours saved each week</p>
                         </div>
                     </div>
                     <div class="counter-number">
-                        <h2> <span class="counter" data-number="4"></span>
+                        <h2> <span class="counter" data-number="4">0</span>
                             million+</h2>
                         <div class="counter-content">
                             <p>Transactions processed</p>
                         </div>
                     </div>
                     <div class="counter-number">
-                        <h2>$ <span class="counter" data-number="2"></span>
+                        <h2>$ <span class="counter" data-number="2">0</span>
                             B+</h2>
                         <div class="counter-content">
                             <p>Processed through GrowFlow</p>
@@ -134,8 +137,12 @@
                         </div>
                         <div class="tabber-flex">
                                         <div class="tabber-left">
+                                            <div class="mobile-view">
+                                               <h6>Cultivators & Producers</h6>
+                                               <i class="fa-solid fa-caret-down"></i>
+                                            </div>
                                             <ul class="tabber-contents tabs" type="none">
-                                                <li class="active" data-tab="tab-1">Cultivators & Producers</li>
+                                                <li data-tab="tab-1">Cultivators & Producers</li>
                                                 <li data-tab="tab-2">Processors & Manufacturers</li>
                                                 <li data-tab="tab-3">Distributors</li>
                                                 <li data-tab="tab-4">Retailers & Dispensaries</li>
@@ -241,7 +248,44 @@
 
 <!-- -----image-section ends here----- -->
 <!-- ----------------------------------- -->
+<section class="counter-two-section">
+    <div class="content-wrapper">
+        <div class="bg-image bg-section" style="background-image:  linear-gradient(#695ff7, #030047); ">
+                <div class="bg-heading">
+                    <h2>We’re only happy if you’re happy</h2>
+                    <div class="bg-content">
+                        <p>Our Customer Happiness team is made up of former cannabis industry veterans who have worked in or managed operations just like yours.
+                            They know what you do and how you do it.</p>
+                    </div>
+                </div>
+                <div class="bg-counter-button">
+                    <div class="primary-button">
+                        <a href="">How can we help you?</a>
+                    </div>
+                </div>
+                <div class="bg-counter-flex">
+                    <div class="left-counter-time">
+                        <h5>2.5 minutes</h5>
+                        <div class="timer-content">
+                            <p>average response time</p>
+                        </div>
+                    </div>
+                    <div class="right-counter-time">
+                       <div class="timer-score">
+                        <h5>55</h5>
+                        <p>NPS Score</p>
+                       </div>
+                       <div class="timer-score">
+                        <h5>96%</h5>
+                        <p>Satisfaction</p>
+                       </div>
+                    </div>
 
+                </div>
+        </div>
+    </div>
+
+</section>
 
 
 
@@ -249,106 +293,5 @@
 </body>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- ------javascript starts here------ -->
-<!-- ---------------------- -->
-<script>
-
-$('.popup a').fancybox({
-caption : function( instance, item ) {}
-});
-</script>
-<script>
-    var a = 0;
-$(window).scroll(function () {
-    var oTop = $(".counter-number").offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
-        $(".counter").each(function () {
-            var $this = $(this),
-                countTo = $this.attr("data-number");
-            $({
-                countNum: $this.text()
-            }).animate(
-                {
-                    countNum: countTo
-                },
-
-                {
-                    duration: 1000,
-                    easing: "swing",
-                    step: function () {
-                        //$this.text(Math.ceil(this.countNum));
-                        $this.text(
-                            Math.ceil(this.countNum).toLocaleString("en")
-                        );
-                    },
-                    complete: function () {
-                        $this.text(
-                            Math.ceil(this.countNum).toLocaleString("en")
-                        );
-                        //alert('finished');
-                    }
-                }
-            );
-        });
-        a = 1;
-    }
-});
-</script>
-
-
-<script>
-
-
-$(document).ready(function(){
-	
-	$('ul.tabs li').click(function(){
-		var tab_id = $(this).attr('data-tab');
-
-		$('ul.tabs li').removeClass('active');
-		$('.tab-content').removeClass('active');
-
-		$(this).addClass('active');
-		$("#"+tab_id).addClass('active');
-	})
-
-})
-
-
-
-</script>
-<!-- ------javascript ends here------ -->
-<!-- ---------------------- -->
 
 </html>
