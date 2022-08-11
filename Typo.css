@@ -94,6 +94,7 @@ p {
     text-transform: uppercase;
     transition: .3s all ease-in-out;
     cursor: pointer;
+    letter-spacing: 1.3px;
 }
 .primary-button a:hover {
     background-color: #ffcc3e;
@@ -115,4 +116,5 @@ p {
     text-transform: uppercase;
     transition: .3s all ease-in-out;
     cursor: pointer;
+    letter-spacing: 1.3px;
 }
