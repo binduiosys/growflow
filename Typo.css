@@ -8,7 +8,7 @@
 }
 
 .content-wrapper {
-    max-width: 1114px;
+    max-width: 1144px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -59,11 +59,12 @@ h5 {
 }
 
 h6 {
-    border-bottom: 2px solid #ffcc3e;
+    border-bottom: 3px solid #ffcc3e;
     line-height: 17px;
     display: inline-block;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    color: #030047;
 }
 
 p {
