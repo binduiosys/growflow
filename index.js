@@ -1,9 +1,11 @@
+////////////////////////////////////////////////hero-section-fancybox/////////////////////////////////////////////////////////////////////////
+
 $('.popup a').fancybox({
     caption: function (instance, item) { }
 });
 
 
-
+////////////////////////////////////////////////counter-section///////////////////////////////////////////////////////////
 var a = 0;
 $(window).scroll(function () {
     var oTop = $(".counter-number").offset().top - window.innerHeight;
@@ -41,6 +43,7 @@ $(window).scroll(function () {
 });
 
 
+///////////////////////////////////tabber-desktop/////////////////////////////////////////////////////////////////////////
 
 $(document).ready(function () {
     $('ul.tabs li').first().addClass('active');
@@ -53,6 +56,8 @@ $(document).ready(function () {
         $(this).addClass('active');
         $("#" + tab_id).addClass('active');
     })
+
+/////////////////////////////////tabber-mobileview-dropdown//////////////////////////////////////////////////////////////
 
     let drpdown = function () {
         if($(window).width() < 768){
@@ -83,3 +88,6 @@ $(document).ready(function () {
       drpdown();
 }
 )
+
+  
+      
