@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Open+Sans:wght@400;600&family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -91,12 +92,14 @@ p {
     font-weight: 700;
     text-align: center;
     display: inline-block;
-    padding: 15px 30px 15px 30px;
+    padding: 16px 32px 16px 32px;
     text-transform: uppercase;
     transition: .3s all ease-in-out;
     cursor: pointer;
-    letter-spacing: 1.3px;
+    letter-spacing: 1.17px;
+    line-height: 17px;
 }
+
 .primary-button a:hover {
     background-color: #ffcc3e;
     transition: .3s all ease-in-out;
@@ -113,9 +116,10 @@ p {
     font-weight: 700;
     text-align: center;
     display: inline-block;
-    padding: 15px 20px 15px 20px;
+    line-height: 17px;
+    padding: 16px 32px;
     text-transform: uppercase;
     transition: .3s all ease-in-out;
     cursor: pointer;
-    letter-spacing: 1.3px;
+    letter-spacing: 1.17px;
 }
