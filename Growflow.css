@@ -1135,6 +1135,11 @@ span.button-hover {
         display: block;
 
     }
+    .hero-section .pop-img {
+        max-width: 351px;
+        margin: 0 auto;
+        width: 100%;
+    }
 
     .hero-section .contents-box {
         -ms-flex-preferred-size: 100%;
@@ -1209,6 +1214,54 @@ span.button-hover {
         max-width: 590px;
         width: 100%;
         margin: 40px 0px 40px 0px;
+    }
+
+    .counter-section .counters {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .counter-section .counter-number {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+        padding: 20px 0px 20px 0px;
+
+    }
+
+    .counter-section .counter-number:not(:nth-child(3n+3)) {
+        border-bottom: 2px solid #ccc;
+        margin-right: 2.5%;
+        border-right: none;
+
+    }
+    .content-describe {
+        text-align: center;
+    }
+    .counter-section {
+        padding: 80px 0px 80px 0px;
+    }
+    .image-section .content-describe p {
+        max-width: 540px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+
+    }
+    .tabber-button {
+        text-align: center;
+    }
+    .image-section .tabber-image {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .section-image {
@@ -1380,7 +1433,13 @@ span.button-hover {
         background-repeat: no-repeat;
         width: 120px;
         min-height: 120px;
-        ;
+        
+    }
+    .bg-heading .bg-content p {
+        font-weight: 300;
+        font-family: 'Inter', sans-serif;
+        font-size: 18px;
+        line-height: 25px;
     }
 
     .slick-slider-section .image-quotes {
@@ -1437,11 +1496,6 @@ span.button-hover {
         right: 10%;
         z-index: 1;
     }
-    .slider-review {
-        width: 100%;
-        max-width: 529px;
-    }
-
     .full-footer-section .footer-left-flex {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1528,6 +1582,27 @@ span.button-hover {
 
     .left-counter-time .timer-content p {
         text-align: center;
+    }
+    .slick-slider-body .slider-move .slider-content {
+        -ms-flex-preferred-size: 67%;
+        flex-basis: 92%;
+    }
+    .timer-score {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        padding-top: 15px;
+    }
+    .slick-slider-section {
+        padding: 91px 0px 40px 0px;
+    }
+    .link-one {
+        -ms-flex-preferred-size: 6%;
+            flex-basis: 6%;
+    }
+    .hero-section {
+        background-color: #F7F8FC;
+        padding: 65px 0px 190px;
     }
 
 
@@ -1868,6 +1943,23 @@ span.button-hover {
     .hero-section {
         background-color: #F7F8FC;
         padding: 65px 0px 70px;
+    }
+    .link-one {
+        -ms-flex-preferred-size: 13%;
+            flex-basis: 13%;
+    }
+    .slick-slider-body .slider-move .slider-content {
+        -ms-flex-preferred-size: 85%;
+            flex-basis: 85%;
+    }
+    .tools-section .tool-image {
+        min-height: 340px;
+        background-size: contain;
+        margin-top: 0px;
+    }
+
+    .slick-slider-section {
+        padding: 115px 0px 30px 0px;
     }
 
 }
